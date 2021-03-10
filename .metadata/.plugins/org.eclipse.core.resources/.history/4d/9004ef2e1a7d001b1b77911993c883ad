@@ -1,0 +1,10 @@
+
+public class Rezos extends Arma {
+
+	@Override
+	public void usar() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

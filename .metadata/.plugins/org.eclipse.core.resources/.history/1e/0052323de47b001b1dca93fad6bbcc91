@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class Casa {
+
+	private Direccion direccion;
+	private Persona propietario;
+	private ArrayList<Persona> inquilino;
+	private ArrayList<Habitacion> habitacion;
+	private int metros2;
+
+	public Casa(Direccion direccion, ArrayList<Habitacion> habitacion, Persona propietario,
+			ArrayList<Persona> inquilino, int metros2) {
+		super();
+		this.direccion = direccion;
+		this.habitacion = habitacion;
+		this.propietario = propietario;
+		this.inquilino = inquilino;
+		this.metros2 = metros2;
+	}
+
+	@Override
+	public String toString() {
+		return "Casa = " + direccion.toString() + "Habitaciones = " + habitacion.toString() + "Propietario = "
+				+ propietario.toString() + " Inquilino = " + inquilino.toString() + " Metros cuadrados = " + metros2;
+	}
+}

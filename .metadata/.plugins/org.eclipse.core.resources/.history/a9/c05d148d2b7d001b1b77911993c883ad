@@ -1,0 +1,59 @@
+package main;
+
+import java.util.List;
+
+import modelo.entidad.*;
+import modelo.negocio.*;
+
+public class ClasePrincipal {
+
+	public static void main(String[] args) {
+		Personaje p1 = new Guerrero();
+		Arma espada = new Espada();
+
+		Personaje p2 = new Curandero();
+		Arma rezo = new Rezo();
+
+		Personaje p3 = new Mago();
+		Arma hechizo = new Hechizo();
+
+		espada.setDanomax(25);
+		espada.setDanomin(10);
+
+		p1.setNombre("Ragnar");
+		p1.setArma(espada);
+		p1.setPuntosVida(150);
+
+		rezo.setDanomax(20);
+		rezo.setDanomin(10);
+
+		p2.setNombre("Rollo");
+		p2.setArma(rezo);
+		p2.setPuntosVida(150);
+
+		hechizo.setDanomax(30);
+		hechizo.setDanomin(7);
+
+		p3.setNombre("Loki");
+		p3.setArma(hechizo);
+		p3.setPuntosVida(150);
+
+		List<Personaje> listaPersonajes = new ArrayList<Personaje>();
+		listaPersonajes.add(p1);
+		listaPersonajes.add(p2);
+		listaPersonajes.add(p3);
+
+		int contrincante1 = Util.generadorAleatorio(0, 2);
+		int contrincante2 = 0;
+
+		do {
+			 contrincante2 = Util.generadorAleatorio(0, 2);
+		} while (contrincante1 == contrincante2);
+
+		Arena arena = new Arena(listaPersonajes.get(contrincante2),  listaPersonajes.get(contrincante2));
+		Personaje pg = arena.combate();
+
+		System.out.println("Ha ganado la batalla" + pg.getNombre());
+	}
+
+}

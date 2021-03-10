@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+
+public class main {
+
+	// TODO Auto-generated constructor stub
+	static ArrayList<Habitacion> habitacion = new ArrayList<Habitacion>();
+
+	Direccion direccion = new Direccion("Calle", "Mayor", 28942, 4);
+	Direccion direcciondueno = new Direccion("Calle", "Tajo", 28670, 12);
+
+	Persona dueno = new Persona(TipoPersona.DUENO,"Pepe", "49151224A", 630582145, direcciondueno );
+	Persona inquilino1 = new Persona(TipoPersona.INQUILINO,"Juan", "09548156Y", 69854125, direccion);
+	Persona inquilino2 = new Persona(TipoPersona.INQUILINO, "Marta","44785698L",654123987, direccion);
+
+	Habitacion Salon = new Habitacion(TipoHabitacion.SALON, 38.5);
+	Habitacion bano = new Habitacion(TipoHabitacion.BANO, 9.75);
+	Habitacion cuartoprincipal = new Habitacion(TipoHabitacion.HABITACION, 22.5);
+	Habitacion cuartoinvitados = new Habitacion(TipoHabitacion.HABITACION, 15);
+	Habitacion banoinvitados = new Habitacion(TipoHabitacion.BANO, 8);
+	Habitacion comedor = new Habitacion(TipoHabitacion.COMEDOR, 44.80);
+	Habitacion terraza = new Habitacion(TipoHabitacion.TERRAZA, 20);
+
+	habitacion.add(cocina);habitacion.add(dormitorio);habitacion.add(dormitorio2);habitacion.add(dormitorio3);habitacion.add(bano);habitacion.add(bano2);habitacion.add(salon);
+
+	Casa casoplon = new Casa(direccion, habitacion, dueno, inquilino,
+			metrosCuadrados());System.out.println(casoplon.toString());
+
+	}
+
+	private static int metrosCuadrados() {
+		// TODO Auto-generated method stub
+		int m = 0;
+		for (int i = 0; i < habitacion.size(); i++) {
+
+			m += habitacion.get(i).getMetros();
+		}
+		return m;
+	}
+
+}

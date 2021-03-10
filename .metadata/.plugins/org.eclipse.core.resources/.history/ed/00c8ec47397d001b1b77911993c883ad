@@ -1,0 +1,12 @@
+package modelo.entidad;
+
+public class Hechizo extends Arma {
+	
+	private int magiacaoatica;
+	
+	@Override
+	public int usar() {
+		int dano
+	}
+
+}

@@ -1,0 +1,15 @@
+
+public class Personajes {
+
+	private Arma arma;
+	private String nombre;
+	private int puntosvida;
+	private int especial;
+
+	public void Personaje(Arma arma, String nombre, int puntosvida, int especial) {
+		this.arma = arma;
+		this.nombre = nombre;
+		this.puntosvida = puntosvida;
+		this.especial = especial;
+	}
+}

@@ -1,0 +1,6 @@
+
+public enum TipoHabitacion {
+	
+	COCINA,SALON,COMEDOR,TERRAZA,BANO,HABITACION
+
+}

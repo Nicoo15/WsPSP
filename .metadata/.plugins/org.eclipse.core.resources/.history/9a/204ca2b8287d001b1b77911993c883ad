@@ -1,0 +1,11 @@
+package main;
+
+import modelo.entidad.*;
+
+public class ClasePrincipal {
+
+	public static void main(String[] args) {
+
+	}
+
+}

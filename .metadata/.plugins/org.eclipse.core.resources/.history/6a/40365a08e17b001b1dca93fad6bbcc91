@@ -1,0 +1,25 @@
+
+public class Casa {
+	
+	private Direccion direccion;
+	private Persona propietario;
+	private private  ArrayList<Persona> propietario;
+	private ArrayList<Habitacion> habitaciones;
+	private int metros;
+
+	public Casa(Direccion direccion, ArrayList<Habitaciones> habitaciones, Personas propietario, private  ArrayList<Persona> inquilino,
+			int metros) {
+		super();
+		this.direccion = direccion;
+		this.habitaciones = habitaciones;
+		this.propietario = propietario;
+		this.inquilino = inquilino;
+		this.metros = metros;
+	}
+
+	@Override
+	public String toString() {
+		return "Casa = " + direccion.toString() + "Habitaciones = " + habitaciones.toString() + "Propietario = "
+				+ propietario.toString() + " Inquilino = " + inquilino.toString() + " Metros cuadrados = " + metros;
+	}
+}

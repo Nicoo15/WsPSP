@@ -1,0 +1,35 @@
+package main;
+
+import modelo.entidad.*;
+import modelo.negocio.*;
+
+public class ClasePrincipal {
+
+	public static void main(String[] args) {
+		Personaje p1 = new Guerrero();
+		Arma espada = new Espada();
+
+		Personaje p2 = new Curandero();
+		Arma rezo = new Rezo();
+		
+		espada.setDanomax(25);
+		espada.setDanomin(10);
+		
+		p1.setNombre("Ragnar");
+		p1.setArma(espada);
+		p1.setPuntosVida(150);
+		
+		rezo.setDanomax(20);
+		rezo.setDanomin(5);
+		
+		p2.setNombre("Rollo");
+		p2.setArma(rezo);
+		p2.setPuntosVida(150);
+		
+		Arena arena = new Arena(p1,p2);
+		Personaje pg = arena.combate();
+		
+		System.out.println("Ha ganado la batalla" + pg.getNombre());
+	}
+
+}

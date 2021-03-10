@@ -1,0 +1,34 @@
+package modelo.entidad;
+
+import modelo.entidad.Personaje;
+
+public class Arena {
+	private Personaje p1;
+	private Personaje p2;
+
+	public Arena(Personaje p1, Personaje p2) {
+		this.p1 = p1;
+		this.p2 = p2;
+
+	}
+
+	public Personaje combate() {
+		Personaje ganador = null;
+		boolean finalcombate = false;
+
+		do {
+
+			p1.atacar(p2);
+			if (p2.getPuntosVida() <= 0) {
+				return p1;
+			}
+			if (p1.getPuntosVida() <= 0) {
+				return p2;
+			}
+
+		} while (!finalcombate);
+
+		return ganador;
+	}
+
+}

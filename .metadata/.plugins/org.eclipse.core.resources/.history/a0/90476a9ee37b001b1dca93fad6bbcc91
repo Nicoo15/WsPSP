@@ -1,0 +1,23 @@
+
+public class Habitacion {
+
+	private String habitacion;
+	private int metros2;
+	private int num;
+
+	public Habitacion(String habitacion, int metros, int num) {
+		super();
+		this.habitacion = habitacion;
+		this.metros2 = metros2;
+		this.num = num;
+	}
+
+	@Override
+	public String toString() {
+		return "Tipo = " + habitacion + " Metros = " + metros2 + " Numero de Habitacion = " + num;
+	}
+	public int getMetros() {
+		return metros2;
+	}
+
+}

@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\Nico\Desktop\2ºDAM\Programacion Multimedia y dispositivos moviles\.metadata\.plugins\org.eclipse.jdt.core
+785617110.index
+2621745540.index
+113558702.index
+531298387.index
+3318937832.index
+3795007416.index
+23951399.index

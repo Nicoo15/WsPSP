@@ -1,0 +1,15 @@
+package main;
+
+import modelo.entidad.*;
+
+public class ClasePrincipal {
+
+	public static void main(String[] args) {
+		Personaje p1 = new Guerrero();
+		Arma espada = new Espada();
+
+		Personaje p2 = new Curandero();
+		Arma rezo = new Rezo();
+	}
+
+}

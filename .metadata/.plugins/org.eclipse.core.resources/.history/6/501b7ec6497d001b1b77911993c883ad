@@ -1,0 +1,14 @@
+package Ejercicio2;
+
+import modelo.entidad.Personaje;
+
+public class Programadores extends Trabajadores {
+
+	@Override
+	public void Trabajadores(Trabajador t) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public abstract void trabajar(Trabajadores t);
+}

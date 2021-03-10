@@ -1,0 +1,20 @@
+package modelo.entidad;
+
+public class Rezo extends Arma {
+
+	private int magiacaotica;
+
+	@Override
+	public int usar() {
+		// TODO Auto-generated method stub
+		int danogeneral = super.usar();
+		int numAleatorio = Util.generadorAleatorio(1, 100);
+		if (numAleatorio <= magiacaotica) {
+			danogeneral = danogeneral * 2;
+
+		}
+		return danogeneral;
+
+	}
+
+}

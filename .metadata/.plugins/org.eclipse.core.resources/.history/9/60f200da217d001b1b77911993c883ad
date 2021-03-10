@@ -1,0 +1,9 @@
+package modelo.entidad;
+
+public class Util {
+
+	public static int generadorAleatorio(int n1, int n2) {
+
+	}
+
+}

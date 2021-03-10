@@ -1,0 +1,14 @@
+package Ejercicio2;
+
+public class Directores extends Trabajadores {
+
+	private Double incentivo;
+
+	public Double getSueldo() {
+		return sueldo;
+	}
+
+	public void setSueldo(Double sueldo) {
+		this.sueldo = sueldo;
+	}
+}
